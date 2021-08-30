@@ -2,10 +2,13 @@
   "name": "pp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sub:pull": "git subtree pull --prefix=lib sub main",
+    "sub:push": "git subtree push --prefix=lib sub main",
+    "start": "node src/main.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
